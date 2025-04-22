@@ -1,0 +1,118 @@
+.contacts {
+  position: relative;
+  height: 100vh;
+
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+
+    .contact-details {
+      flex: 1 1 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-top: 10px;
+
+      @media screen and (max-width: $l2) {
+        flex: none;
+        width: 100%;
+        align-items: center;
+        padding-top: 0px;
+      }
+
+      p {
+        text-align: right;
+        color: $white;
+
+        @media screen and (max-width: $xl) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: $l2) {
+          text-align: center;
+        }
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .contact-social {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        @media screen and (max-width: $xxxl) {
+          margin-top: 0rem;
+        }
+
+        p {
+          display: inline-block;
+        }
+        .social-icons {
+          display: flex;
+          justify-content: right;
+          align-items: right;
+
+          @media screen and (max-width: $l2) {
+            justify-content: center;
+            align-items: center;
+          }
+
+          a {
+            color: $white;
+            font-size: 30px;
+            padding: 0px 10px;
+
+            @media screen and (max-width: $l2) {
+              font-size: 30px;
+            }
+            @media screen and (max-width: $l) {
+              font-size: 25px;
+            }
+            @media screen and (max-width: $m) {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-map {
+      flex: 2 2 300px;
+
+      @media screen and (max-width: $l2) {
+        flex: none;
+        width: 100%;
+      }
+
+      iframe {
+        width: 100%;
+        border-radius: 8px;
+        max-height: 600px;
+
+        @media screen and (max-width: $l2) {
+          max-height: 300px;
+        }
+      }
+    }
+  }
+}
+
+i {
+  display: flex;
+  justify-items: right;
+  align-items: right;
+  right: 0;
+}

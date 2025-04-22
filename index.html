@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Gaucho</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- JS -->
+    <script src="./js/main.js" defer></script>
+    <!-- CSS -->
+    <script src="https://kit.fontawesome.com/ac6953d5aa.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="./style/app.css" />
+    <!-- Gallery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body id="top">
+    <!-- Navigation -->
+    <header>
+        <div class="nav">
+            <div class="nav-container">
+                <div class="lang-toggle">
+                    <span id="en" class="lang-btn active">EN</span>
+                    <span id="es" class="lang-btn">ES</span>
+                </div>
+                <nav class="navigation">
+                    <div class="nav-mobile">
+                        <a id="nav-ham" class="nav-ham" href="#">
+                            <span></span>
+                        </a>
+                    </div>
+                    <ul class="nav-items">
+                        <li><a href="#about" class="nav-item" data-en="About Us" data-es="Sobre Nosotros">About Us</a>
+                        </li>
+                        <li><a href="#gallery" class="nav-item" data-en="Gallery" data-es="Galería">Gallery</a></li>
+                        <li><a href="./El Gaucho wine menu.pdf" target="_blank" class="nav-item" data-en="Menu" data-es="Menú">Menu</a></li>
+                        <li><a href="#contacts" class="nav-item" data-en="Contact Us" data-es="Contáctenos">Contact
+                                Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Welcome -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="./img/logo/logo_yellow_vintage_4.png" alt="Logo" class="hero-logo">
+            <p class="hero-year">SOTOGRANDE <br> 1985</p>
+        </div>
+        <div class="hero-middle">
+            <p class="hero-text" id="hero-text" data-en="Restaurant. Grill. Wine."
+                data-es="Restaurante. Parilla. Vino.">
+                Restaurant. Grill. Wine.
+            </p>
+        </div>
+        <div class="hero-footer">
+            <p class="hero-info" data-en="Open every day except on Wednesdays <br> 19:00-00:00"
+                data-es="Abierto todos los días excepto los miércoles <br> 19:00-00:00">
+                Open every day except on Wednesdays <br> 19:00-00:00
+            </p>
+            <p class="hero-phone"><a href="tel:+34956795528">+34 956 795 528</a></p>
+        </div>
+    </section>
+    <div class="overlay"></div>
+
+    <!-- About Us -->
+    <section class="section about" id="about">
+        <div class="section-container about-container">
+            <h2 class="section-name" data-en="About Us" data-es="Sobre Nosotros">About Us</h2>
+            <div class="about-content">
+                <div class="history-content">
+                    <p data-en="El Gaucho de Sotogrande opened its doors in 1985 and was created by Albert Crouquet, and business partner and friend Peter Hans Blagatinshegg Kaiserfeld. El Gaucho was the first restaurant in Sotogrande to open to the public. This house favourite steakhouse was the second restaurant of Peter who opened the Gaucho of Puerto de Banus in 1977. El Gaucho de Sotogrande has catered to our family and friends over 40 years and counting. Our vision is simple, a family run restaurant, that offers the highest quality steaks."
+                        data-es="El Gaucho de Sotogrande abrió sus puertas en 1985 y fue creado por Albert Crouquet, y su socio y amigo Peter Hans Blagatinshegg Kaiserfeld. El Gaucho fue el primer restaurante de Sotogrande en abrir sus puertas al público. Este asador favorito fue el segundo restaurante de Peter, que abrió el Gaucho de Puerto de Banús en 1977. Nuestra visión es simple, un restaurante familiar, que ofrece la más alta calidad.">
+                        El Gaucho de Sotogrande opened its doors in 1985 and was created by Albert Crouquet, and
+                        business partner and friend Peter Hans Blagatinshegg Kaiserfeld. El Gaucho was the first
+                        restaurant in Sotogrande to open to the public. This house favourite steakhouse was the second
+                        restaurant of Peter who opened the Gaucho of Puerto de Banus in 1977. El Gaucho de Sotogrande
+                        has catered to our family and friends over 40 years and counting. Our vision is simple, a family
+                        run restaurant, that offers the highest quality steaks.
+                    </p>
+                </div>
+                <div class="history-slider">
+                    <img id="history-image" src="./img/Gallery/Papel_0078.jpg" alt="Historical Image">
+                </div>
+            </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+        <div class="section-container gallery-container">
+            <h2 class="section-name" data-en="Gallery" data-es="Galería">Gallery</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/Gallery/Section/_AS31285-Editar[1]-min.jpg" alt="Image 1">
+                    </div>
+                    <div class="swiper-slide"><img src="./img/Gallery/Section/_AS31578[1]-min.jpg" alt="Image 2"></div>
+                    <div class="swiper-slide"><img src="./img/Gallery/Section/_AS31519[1]-min.jpg" alt="Image 3"></div>
+                    <div class="swiper-slide"><img src="./img/Gallery/Section/_AS31898[1]-min.jpg" alt="Image 4"></div>
+                    <div class="swiper-slide"><img src="./img/Gallery/Section/_AS32021[1]-min.jpg" alt="Image 5"></div>
+                    <div class="swiper-slide"><img src="./img/Gallery/Section/_AS32008[1]-min.jpg" alt="Image 6"></div>
+                    <div class="swiper-slide"><img src="./img/Gallery/Section/_AS31618[1]-min.jpg" alt="Image 7"></div>
+                    <div class="swiper-slide"><img src="./img/Gallery/Section/_AS31720[1]-min.jpg" alt="Image 8"></div>
+                    <div class="swiper-slide"><img src="./img/Gallery/Section/_AS31535[1]-min.jpg" alt="Image 9"></div>
+                </div>
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="section contacts" id="contacts">
+        <div class="section-container contacts-container">
+            <h2 class="section-name" data-en="Contacts" data-es="Contactos">Contacts</h2>
+            <div class="contact-content">
+                <div class="contact-details">
+                    <p data-en="Phone: +34
+                    956 795 528" data-es="Número de teléfono: +34
+                    956 795 528"><strong
+                            style="color: #debe4e; font-weight: 400; text-transform: uppercase;">Phone:</strong> <a
+                            href="tel:+34956795528"> +34
+                            956 795 528</a></p>
+                    <p data-en="Email: info@restaurant.com" data-es="Correo electrónico: info@restaurant.com"><strong
+                            style="color: #debe4e; font-weight: 400; text-transform: uppercase;">Email:</strong> <a
+                            href="mailto:info@restaurant.com"> info@restaurant.com</a></p>
+                    <p data-en="Address: Centro Comercial Paniagua, Av. Paniagua, 11310 Sotogrande, Cádiz, Spain"
+                        data-es="Dirección: Centro Comercial Paniagua, Av. Paniagua, 11310 Sotogrande, Cádiz, España">
+                        <strong style="color: #debe4e; font-weight: 400; text-transform: uppercase;">Address:</strong>
+                        Centro Comercial Paniagua,
+                        Av. Paniagua, 11310 Sotogrande, Cádiz, Spain<br> <br>
+                    </p>
+                    <p data-en="Open every day except on Wednesdays"
+                        data-es="Abierto todos los días excepto los miércoles">
+                        <strong style="color: #debe4e; font-weight: 400; text-transform: uppercase;">Open every day
+                            except on Wednesdays</strong>
+                    </p>
+                    <p data-en="Opening Hours:" data-es="Horario de apertura:">
+                        <strong style="color: #debe4e; font-weight: 400; text-transform: uppercase;">Opening
+                            Hours:</strong> 19:00-00:00 <br> <br>
+                    </p>
+                    <div class="contact-social">
+                        <p data-en="Follow Us:" data-es="Síganos:"><strong
+                                style="color: #debe4e; font-weight: 400; text-transform: uppercase;">Follow Us:</strong>
+                        </p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/gauchosotogrande/" target="_blank"
+                                rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/gauchosotograde" target="_blank"
+                                rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3216.0843575027334!2d-5.304367323748083!3d36.28600299651531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0cc4852f9b0481%3A0xc1ea4907edd00717!2sEl%20Gaucho%20de%20Sotogrande!5e0!3m2!1slt!2slt!4v1744134168207!5m2!1slt!2slt"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./img/logo/logo_yellow_vintage_4.png" alt="Logo">
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-social">
+                    <p data-en="Follow Us:" data-es="Síganos:" style="text-transform: uppercase;">Follow Us:</p>
+                    <div class="footer-icons">
+                        <a href="https://www.instagram.com/gauchosotogrande/" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/gauchosotograde" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <p data-en="Address: Centro Comercial Paniagua,
+                    Av. Paniagua, 11310 Sotogrande, Cádiz, Spain" data-es="Síganos:">ADDRESS: Centro Comercial
+                        Paniagua,
+                        Av. Paniagua, 11310 Sotogrande, Cádiz, Spain</p>
+                    <p>PHONE: <a href="tel:+34956795528">+34 956 795 528</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 El Gaucho. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-to-top" title="Back to top">↑</a>
+</body>
+
+</html>

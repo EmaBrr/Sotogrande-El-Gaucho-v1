@@ -1,0 +1,211 @@
+// Body styles:
+
+html {
+  scroll-behavior: smooth;
+  // scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  color: $white;
+  overflow-x: hidden;
+  min-height: 460px;
+  width: 100%;
+  background-color: black;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+// Text 
+
+p {
+    width: 100%;
+    font-family: $font_2;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: $white;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+
+    @media screen and (max-width: $xxxl) {
+      font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: $xl) {
+      font-size: 1rem;
+      line-height: 25px;
+    }
+
+    @media screen and (max-width: $l2) {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: $m) {
+      font-size: 1rem;
+      width: 95%;
+    }
+
+    @media screen and (max-width: $s2) {
+      font-size: 0.8rem;
+      line-height: 20px;
+      width: 100%;
+    }
+  }
+
+
+// Section styles:
+
+.section-name {
+  font-size: 2.5rem;
+  font-family: $font_1;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding-bottom: 40px;
+  color: $accentcolor2;
+  text-shadow: -1px -1px 0 $accentcolor3, 1px -1px 0 $accentcolor3,
+    -1px 1px 0 $accentcolor3, 1px 1px 0 $accentcolor3;
+  text-align: center;
+
+  @media screen and (max-width: $xxxl) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: $xxl) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: $xl) {
+    font-size: 2.2rem;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $l2) {
+    font-size: 2rem;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $l) {
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $m) {
+    font-size: 1.6rem;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (max-width: $s2) {
+    font-size: 1.4rem;
+    padding-bottom: 30px;
+  }
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    background: none !important;
+    color: white;
+    height: auto;
+    height: 100vh;
+    min-height: 600px;
+  
+    @media screen and (max-width: $m) and (orientation: landscape){
+      padding: 50px 15px 15px 15px;
+      justify-content: space-evenly;
+    }
+  
+    .section-container {
+      width: 80%;
+      max-width: 1500px;
+      background-color: $accentcolor4;
+      opacity: 0.9;
+      border-radius: 5px;
+      padding: 50px;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.25),
+        0 6px 12px rgba(0, 0, 0, 0.2);
+  
+      @media screen and (max-width: $xxl) {
+        width: 90%;
+        padding: 30px;
+      }
+  
+      @media screen and (max-width: $l2) {
+        padding: 30px;
+        padding-bottom: 40px;
+      }
+  
+      @media screen and (max-width: $m) {
+        width: 100%;
+      }
+    }
+  }
+  
+
+// Overlay styles:
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+  transition: background 0.5s ease-in-out;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: transparent;
+  text-align: center;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  font-size: 2rem;
+  color: $accentcolor2;
+  background-color: rgba(81, 89, 67, 1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.25),
+  0 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 10px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  // opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+
+  &:hover {
+    background-color: rgba(81, 89, 67, 0.5);
+  }
+
+  @media screen and (max-width: $xxl) {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 20px;
+    background-color: rgba(81, 89, 67, 0.5);
+  }
+}
