@@ -2,6 +2,11 @@
   position: relative;
   height: 100vh;
 
+  @media screen and (max-width: $s2) {
+    height: auto;
+    padding-bottom: 80px;
+  }
+
   .contact-content {
     display: flex;
     flex-wrap: wrap;

@@ -710,8 +710,6 @@ p {
   background: none !important;
   color: white;
   height: auto;
-  height: 100vh;
-  min-height: 800px;
 }
 @media screen and (max-width: 576px) and (orientation: landscape) {
   .section {
@@ -797,6 +795,12 @@ header {
 .about {
   height: 100vh;
   justify-items: center;
+}
+@media screen and (max-width: 490px) {
+  .about {
+    height: auto;
+    padding-bottom: 80px;
+  }
 }
 .about .about-container .about-content {
   background: none !important;
@@ -890,6 +894,12 @@ header {
   position: relative;
   height: 100vh;
 }
+@media screen and (max-width: 490px) {
+  .gallery {
+    height: auto;
+    padding-bottom: 80px;
+  }
+}
 .gallery .swiper {
   width: 100%;
   height: auto;
@@ -927,6 +937,12 @@ header {
 .contacts {
   position: relative;
   height: 100vh;
+}
+@media screen and (max-width: 490px) {
+  .contacts {
+    height: auto;
+    padding-bottom: 80px;
+  }
 }
 .contacts .contact-content {
   display: flex;

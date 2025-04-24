@@ -123,8 +123,6 @@ p {
     background: none !important;
     color: white;
     height: auto;
-    height: 100vh;
-    min-height: 800px;
   
     @media screen and (max-width: $m) and (orientation: landscape){
       padding: 50px 15px 15px 15px;

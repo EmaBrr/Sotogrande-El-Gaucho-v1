@@ -1,6 +1,11 @@
 .about {
   height: 100vh;
   justify-items: center;
+  
+  @media screen and (max-width: $s2) {
+    height: auto;
+    padding-bottom: 80px;
+  }
 
   .about-container {
     .about-content {
