@@ -702,8 +702,7 @@ p {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  justify-items: center;
+  justify-content: center;
   padding: 20px;
   width: 100%;
   position: relative;
