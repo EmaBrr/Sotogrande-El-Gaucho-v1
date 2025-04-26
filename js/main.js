@@ -151,3 +151,12 @@ backToTop.addEventListener('click', function(e) {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// Contact style:
+
+function switchLanguage(lang) {
+  const labels = document.querySelectorAll('.contact-label');
+  labels.forEach(label => {
+      label.textContent = label.getAttribute(`data-${lang}`);
+  });
+}
