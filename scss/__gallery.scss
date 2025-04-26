@@ -44,3 +44,19 @@
 .swiper-pagination-bullet-active {
   background-color: $accentcolor2 !important;
 }
+
+.desktop-img {
+  display: block;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.mobile-img {
+  display: none;
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+}

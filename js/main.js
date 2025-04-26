@@ -146,7 +146,7 @@ window.addEventListener('scroll', () => {
   lastScrollY = currentScrollY;
 });
 
-// Smooth scroll to top
+// Smooth scroll to top: 
 backToTop.addEventListener('click', function(e) {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });

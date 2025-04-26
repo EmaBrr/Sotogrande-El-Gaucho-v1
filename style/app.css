@@ -934,6 +934,24 @@ header {
   background-color: #edc94c !important;
 }
 
+.desktop-img {
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  .desktop-img {
+    display: none;
+  }
+}
+
+.mobile-img {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .mobile-img {
+    display: block;
+  }
+}
+
 .contacts {
   position: relative;
   height: 100vh;
